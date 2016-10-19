@@ -1,5 +1,5 @@
 body{
-		background: url(pink-flower.jpg) no-repeat fixed center; 
+		background: url(cozy.jpg) no-repeat fixed center; 
 		background-size: cover;
 	}
 		
@@ -60,7 +60,9 @@ li.dropdown {
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
+.header{
+	padding: 5px;
+}
 
 /*div{
 	
