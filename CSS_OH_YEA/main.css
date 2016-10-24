@@ -62,8 +62,17 @@ li.dropdown {
 
 .header{
 	padding: 5px;
+	
 }
-
+#body{
+	padding-bottom: 50px;
+	padding-top: 7px;
+	background-color: #ddffcc;
+	
+}
+h2{
+	text-align:center;
+}
 /*div{
 	
 }
