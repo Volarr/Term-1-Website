@@ -58,6 +58,7 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+	transition: all 0.5s;
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -94,12 +95,19 @@ form{
 	text-align: center;
 }
 
-input{
-	overflow: visible;
+
+input[type=text]:focus, input[type=password]:focus{
+	border: 2px solid #555;
 }
 
-input[type=text]{
-	
+input[type=submit]{
+	background-color: #281087;
+	padding: 10px 26px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	border:none;
+	margin-top: 15px;
 }
 
 /*div{
