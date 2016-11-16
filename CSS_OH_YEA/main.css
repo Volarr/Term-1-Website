@@ -62,24 +62,26 @@ It also creates padding around the text so the text is not bungled up together. 
 .header{
 	padding: 5px;
 }
+/* Above gives padding around the header */
 
 .body{
-	padding-bottom: 500px;
 	padding-top: 7px;
 	background-color: white;
 	width: 85%;
 	margin: 0 auto;
-	height: 50px;
+	height: 500px;
 	border-color: black;
 	box-shadow: 0px 8px 8px 0px rgba(66,66,66,1.7);
 	border-style: solid;
 	border-color: #cccccc;
 	border-width: 1.3px;
 }
-
+/* Above is the CSS for the div with the body class. It makes the background colour white, sets the height of the div as 500px, sets borders and box shadows,
+and sets the width so the div does not stretch the entire page. It also makes the div be in the center of the page. */
 h2{
 	text-align:center;
 }
+/*Above sets the second header text be in the middle*/
 
 .body .par{
 	margin-left: 10px;
@@ -87,6 +89,7 @@ h2{
 	font-size: 150%;
 	text-align:center;
 }
+/* Above sets text to be in the middle and to be bigger. */
 
 form{
 	text-align: center;
@@ -97,6 +100,8 @@ input[type=text]:focus, input[type=password]:focus{
 	border: 2px solid #555;
 }
 
+/* Above sets the border for the forms a different colour when you click on them. */
+
 input[type=submit]{
 	background-color: #281087;
 	padding: 10px 26px;
@@ -106,6 +111,7 @@ input[type=submit]{
 	border:none;
 	margin-top: 15px;
 }
+/* Above edits the submit form so it is fancy and blue and does not suck. */
 
 /*div{
 	
