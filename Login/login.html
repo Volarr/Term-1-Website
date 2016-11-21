@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+	
+		<title>Secondary 4E Homework Website</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<!--Links to an ico file which sets the title image-->
+		<link rel="stylesheet" href="../CSS_OH_YEA/main.css">
+		<!--Links to the css fileinside CSS OH YEAH folder-->
+	
+	</head>
+	
+	<body>
+		
+		<div class="header">
+		
+			<h1> Login </h1>
+			
+		</div>
+		<!--Created a div for the header to edit positioning in the header etc.-->
+		
+		<ul class="navbar">
+		<!-- Navbar stuff. Each li has a class+ ul also has its own class so if I want to have another list in the future, it will not go crazy-->
+			<li class="dropdown"><a href="../Website_1.html">Home</a></li>
+			<li class="dropdown"><a href="../Websites/english.html">English</a></li>
+			<li class="dropdown"><a href="../Websites/religion.html">Religion</a></li>
+			<li class="dropdown"><a href="../Websites/french.html">French</a></li>
+			<!-- First dropdown that includes other link inside--> 
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Math</a>
+					<div class="dropdown-content">
+						<a href="../Websites/Math/honorsm.html">Honors</a>
+						<a href="../Websites/Math/ns.html">NS(high)</a>
+						<a href="../Websites/Math/ts.html">TS(low)</a>
+					</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Science</a>
+				<div class="dropdown-content">
+					<a href="../Websites/Science/honorss.html">Honors</a>
+					<a href="../Websites/Science/astse.html">AST+SE(high)</a>
+					<a href="../Websites/Science/ast.html">AST(low)</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Options</a>
+				<div class="dropdown-content">
+					<a href="../Websites/Options/cp.html">Computer Programming</a>
+					<a href="../Websites/Options/classics.html">Classics</a>
+					<a href="../Websites/Options/journalism.html">Journalism</a>
+					<a href="../Websites/Options/architecture.html">Architecture</a>
+					<a href="../Websites/Options/art.html">Art</a>
+					<a href="../Websites/Options/theatre.html">Theatre Arts</a>
+					<a href="../Websites/Options/robotics.html">Robotics</a>
+					<a href="../Websites/Options/media.html">Media History</a>
+					<a href="../Websites/Options/wwhistory.html">WW History</a>
+				</div>
+			</li>
+			<li class="dropdown"><a href="login.html">Login</a></li>
+
+					<!--<li class="dropdown"><a href="#">Options</li></a>-->
+		</ul>
+		
+		<div class="login">
+		
+			<form action="submit.php">
+		
+			Username: <br>
+		
+			<input type="text" name="username"><br>
+		
+			Password: <br>
+		
+			<input type="password" name="password"><br>
+		
+			<input type="submit" name="Submit"><br>
+		
+			</form>
+		
+		</div>
+	</body>
+</html>

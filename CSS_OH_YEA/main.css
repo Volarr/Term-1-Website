@@ -91,10 +91,15 @@ h2{
 }
 /* Above sets text to be in the middle and to be bigger. */
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
 form{
 	text-align: center;
 }
 
+
+.login{
+	padding-top: 7px;
+}
 
 input[type=text]:focus, input[type=password]:focus{
 	border: 2px solid #555;
