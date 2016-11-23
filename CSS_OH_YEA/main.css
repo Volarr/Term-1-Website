@@ -83,7 +83,7 @@ h2{
 }
 /*Above sets the second header text be in the middle*/
 
-.body .par{
+.body .par, .login .par{
 	margin-left: 10px;
 	margin-right: 10px;
 	font-size: 150%;
@@ -99,10 +99,19 @@ form{
 
 .login{
 	padding-top: 7px;
+	background-color: white;
+	width: 85%;
+	margin: 0 auto;
+	height: 500px;
+	border-color: black;
+	box-shadow: 0px 8px 8px 0px rgba(66,66,66,1.7);
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 1.3px;
 }
 
 input[type=text]:focus, input[type=password]:focus{
-	border: 2px solid #555;
+	border: 1.3px solid #555;
 }
 
 /* Above sets the border for the forms a different colour when you click on them. */
@@ -115,6 +124,19 @@ input[type=submit]{
 	cursor: pointer;
 	border:none;
 	margin-top: 15px;
+}
+
+input[type=text], input[type=password]{
+	padding: 16px 20px;
+	background-color: #d9d9d9;
+	border: 1.2px solid;
+}
+
+input{
+	width: 90%;
+	height: 50px;
+	margin: 10px;
+	box-sizing: border-box;
 }
 /* Above edits the submit form so it is fancy and blue and does not suck. */
 
