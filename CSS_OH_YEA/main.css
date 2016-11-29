@@ -1,5 +1,5 @@
 body{
-		background: url(cozy.jpg) no-repeat fixed center; 
+		background: url(../Photos/cozy.jpg) no-repeat fixed center; 
 		background-size: cover;
 	}
 /*Makes the background span the whole page*/

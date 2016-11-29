@@ -62,7 +62,22 @@
 			<h2>Welcome To The 4E Homework Page!</h2>
 			
 			<p class="par">To navigate through the page, hover over the navbar and find what subject you need to check.</p>
+			
+			
+			<form>
+				<input id="inp" type="text" disabled>
+				<input id="edit" type="button" value="Edit">
+			</form>
 		
+		<script type="text/javascript">
+		var el  = document.getElementById('edit');
+		var inp = document.getElementById('inp');
+		el.addEventListener('click', function(){
+		inp.disabled = false;
+		inp.focus(); // set the focus on the editable field
+		document.getElementById('edit').innerHTML=
+		});
+</script>
 		</div>
 		
 	</body>
