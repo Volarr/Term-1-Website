@@ -1,7 +1,6 @@
-var el  = document.getElementById('edit');
-var inp = document.getElementById('inp');
-el.addEventListener('click', function(){
-    inp.disabled = false;
-    inp.focus(); // set the focus on the editable field
-});
+function TextBox(){
+	document.getElementById('inp').disabled=false;
+	document.getElementById('inp').focus();
+}
+
 // http://stackoverflow.com/questions/18386495/make-form-fields-editable-on-button-click
