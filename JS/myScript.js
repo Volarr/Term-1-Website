@@ -3,4 +3,6 @@ function TextBox(){
 	document.getElementById('inp').focus();
 }
 
-// http://stackoverflow.com/questions/18386495/make-form-fields-editable-on-button-click
+function Submit(){
+	document.getElementById("password").submit()
+}
