@@ -116,7 +116,7 @@ input[type=text]:focus, input[type=password]:focus{
 
 /* Above sets the border for the forms a different colour when you click on them. */
 
-input[type=submit]{
+input[type=button]{
 	background-color: #281087;
 	padding: 10px 26px;
 	color: white;

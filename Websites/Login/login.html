@@ -9,6 +9,7 @@
 		<!--Links to an ico file which sets the title image-->
 		<link rel="stylesheet" href="../../CSS_OH_YEA/main.css">
 		<!--Links to the css fileinside CSS OH YEAH folder-->
+		<script src="../../JS/myScript.js"> </script>
 	
 	</head>
 	
@@ -17,6 +18,7 @@
 		<div class="header">
 		
 			<h1> Login </h1>
+			<h2 id= "welcome"> Welcome User </h2>
 			
 		</div>
 		<!--Created a div for the header to edit positioning in the header etc.-->
@@ -72,14 +74,14 @@
 		
 			<label> Username: </label><br>
 		
-			<input type="text" name="username" placeholder="Example: Fedorowicza"><br>
+			<input type="text" name="username" id= "username" placeholder="Example: Fedorowicza"><br>
 		
 			<label>Password:</label> <br>
 		
-			<input type="password" name="password"><br>
-		
-			<input onclick="Submit() "type="submit" name="Submit"><br>
-		
+			<input type="password" id= "password" name="password"><br>
+			
+			<input onclick="login()" type="button" name="Submit" value="Submit"><br>
+			<!-- this input is temporarily a button type-->
 			</form>
 		
 		</div>
