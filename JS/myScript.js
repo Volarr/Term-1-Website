@@ -24,11 +24,13 @@ function TextBox(){
 /*function ends*/
 
 function login(){
-	if (document.getElementById("username").value === Username) {
-		if (document.getElementById("password").value === Password) {
-			document.getElementById("welcome").innerHTML = "Welcome " + Username;
-		} else {alert("Incorrect Password")}
-	} else {alert("Incorrect Username")}
+	for(i = 0; array.length < i; i++) {
+	
+		if() = {
+			
+		}
+	}
+
 }
 
 
@@ -38,7 +40,7 @@ function users(Username, Password) {
 	this.Username = Username;
 	this.Password = Password;
 }
-var i = 0
+var a = 0
 var array = [];
 function signUp(){
 	var el1 = document.getElementById("usernames").value;
@@ -48,7 +50,11 @@ function signUp(){
 	array.push(profile);
 	/*console.log(array);*/
 	var newUser = JSON.stringify(array);
+	//Here I made the array into a string so it can be saved in local storage
+	var number = JSON.stringify(a);
 	localStorage.setItem("User", newUser);
 	console.log(JSON.parse(localStorage.getItem("User")));
-	i++
+	a++
+	document.getElementById("usernames").value = null;
+	document.getElementById("passwords").value = null;
 }
