@@ -24,11 +24,17 @@ function TextBox(){
 /*function ends*/
 
 function login(){
-	for(i = 0; array.length < i; i++) {
-	
-		if() = {
+	console.log(JSON.parse(localStorage.getItem("User")));
+	var check = JSON.parse(localStorage.getItem("User"));
+	for(i = 0; check.length >= i; i++) {
+		console.log("for start");
+		var arr = check[i];
+		if(document.getElementById("username").value === arr["Username"]) {
 			
-		}
+			if(document.getElementById("password").value === arr.Password){
+				document.getElementById("welcome").innerHTML = "Welcome " + arr.Username
+			}else{console.log("nope Password")}
+		}else{console.log("nope Username")}
 	}
 
 }
