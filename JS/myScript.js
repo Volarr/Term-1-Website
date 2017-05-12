@@ -3,64 +3,64 @@ function TextBox(){
 	document.getElementById('inp').disabled=false;
 	document.getElementById('inp').focus();
 }
-
-/*Function is onclick at the submit button on the login button*/
-/*function login(){
-	var Username = "Andrzej Fedorowicz"
-	//setting variable Username as my name. This will be the variable the code will check in order to "log you in"
-	var Password = "Password"
-	//Password variable is set to "Password". The function will also check the Password form to check if the input is the same
-	if (document.getElementById("username").value === Username) {
-		//if statement checks the username form input. If it matches, the function continues. If not, there will be an alert 
-		//saying an incorrect username was submitted.
-		if (document.getElementById("password").value === Password) {
-			//If statement checks if the password input matches the Password variable. If so, the second header on the webpage will 
-			change to say "Welcome Username(variable)" Otherwise, there will be an alert saying an incorrect password was inputed.
-			document.getElementById("welcome").innerHTML = "Welcome " + Username;
-		} else {alert("Incorrect Password")}
-	} else {alert("Incorrect Username")}
-}*/
-
-/*function ends*/
-
-function login(){
-	console.log(JSON.parse(localStorage.getItem("User")));
-	var check = JSON.parse(localStorage.getItem("User"));
-	for(i = 0; check.length >= i; i++) {
-		console.log("for start");
-		var arr = check[i];
-		if(document.getElementById("username").value === arr["Username"]) {
-			
-			if(document.getElementById("password").value === arr.Password){
-				document.getElementById("welcome").innerHTML = "Welcome " + arr.Username
-			}else{console.log("nope Password")}
-		}else{console.log("nope Username")}
-	}
-
-}
-
-
-
+//Ignore this
 
 function users(Username, Password) {
 	this.Username = Username;
 	this.Password = Password;
 }
-var a = 0
+//This function is an object creator. When you call the function with two parameters, it creates an object with parameters equal to whatever you want.
+
 var array = [];
+//Setting an empty array in which objects can be placed(or pushed)
 function signUp(){
 	var el1 = document.getElementById("usernames").value;
+	//Setting the input value of the username form as a variable which will become the new object's username parameter.
 	var el2 = document.getElementById("passwords").value;
+	//Same thing as before, except this will be the password parameter.
 	var profile = new users(el1, el2);
-	/*console.log(profile);*/
+	//This creates a new object using the two variables that are equal to whatever the value of the inputs were.
 	array.push(profile);
-	/*console.log(array);*/
+	//Pushing the new object to the array.
 	var newUser = JSON.stringify(array);
-	//Here I made the array into a string so it can be saved in local storage
-	var number = JSON.stringify(a);
+	//Here I made the array into a string so it can be saved in local storage(local storage can't save arrays or objects, only strings)
 	localStorage.setItem("User", newUser);
+	/*The local storage saves the array with the new object in it. When another object is created, the array will be saved another time,
+	but it won't matter considering they are essentially the same*/
 	console.log(JSON.parse(localStorage.getItem("User")));
-	a++
+	//This just logs the array so you can see the parameters of the objects, if you forgot them.
 	document.getElementById("usernames").value = null;
 	document.getElementById("passwords").value = null;
+	//These set the values of the forms as null, so you don't have to erase what you already typed in each time you want to create a new user.
 }
+
+
+var fin = true;
+//This variable is used when trying to say that one of the inputs is incorrect and making alert out of it.
+function login(){
+	var check = JSON.parse(localStorage.getItem("User"));
+	//This sets the parsed version of the array from the local storage as a variable.
+	for(i = 0; check.length > i; i++) {
+		//This for loop is used for checking if each input is equal to one of the parameters of one of the objects in the array.
+		var arr = check[i];
+		//This variable is equal to the object in the position i(so that the function checks different objects each time)
+		if(document.getElementById("username").value === arr["Username"]) {
+			//If statement checks if the form value of the username is equal to the parameter of the object it is currently checking
+			if(document.getElementById("password").value === arr.Password){
+				//Same thing, but for the password
+				document.getElementById("welcome").innerHTML = "Welcome " + arr.Username
+				fin = false
+				//Sets fin as false(basically saying that the inputs are correct and there won't be any alerts saying that the inputs are incorrect)
+				break;
+			}
+			
+		}
+
+	}
+	if(fin){
+		alert("Incorrect Username or Password")
+	}
+}//Does what I explained in the previous comment
+
+
+//These functions are onclick within the HTML pages.
