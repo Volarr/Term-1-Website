@@ -49,6 +49,7 @@ function login(){
 			if(document.getElementById("password").value === arr.Password){
 				//Same thing, but for the password
 				document.getElementById("welcome").innerHTML = "Welcome " + arr.Username
+				alert("Successfully Logged In")
 				fin = false
 				//Sets fin as false(basically saying that the inputs are correct and there won't be any alerts saying that the inputs are incorrect)
 				break;
